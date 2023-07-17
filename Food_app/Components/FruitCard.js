@@ -14,7 +14,7 @@ const FruitCard = ({ fruit }) => {
           </View>
         </TouchableOpacity>
       </View>
-      <View style={[styles.fruitImagecontainer,styles.center,{shadowColor:fruit.shadow}]}>
+      <View style={[styles.fruitImagecontainer,styles.center,{ shadowColor: fruit.shadow, shadowOpacity: 0.5, shadowRadius: 5,elevation:10 }]}>
         <Image
           style={styles.fruitImage}
           resizeMode="cover"

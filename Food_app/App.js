@@ -5,10 +5,11 @@ import DetailsScreen from "./Components/DetailsScreen";
 
 const Stack = createNativeStackNavigator();
 
+
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName={"FruitsMainScreen"}>
+      <Stack.Navigator screenOptions={{headerShown:false}} initialRouteName={"FruitsMainScreen"}>
         <Stack.Screen
           name={"FruitsMainScreen"}
           component={FruitsMainScreen}

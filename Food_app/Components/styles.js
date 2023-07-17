@@ -104,7 +104,78 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     marginRight: 5,
     fontWeight: "500",
-  }
+  },
+  arrowContainer: {
+    width: 35,
+    aspectRatio: 1,
+    backgroundColor: "rgba(255,255,255,.4)",
+    position: "absolute",
+    top: 50,
+    left: 30,
+    borderWidth: 1,
+    borderColor: "white",
+    borderRadius: 10,
+    zIndex: 9999999999999,
+  },
+  fruitImageContainer: {
+    marginTop: 100,
+    alignSelf: "center",
+  },
+  bottomSheet: {
+    height: "45%",
+    backgroundColor: "white",
+    marginTop: 70,
+    borderTopRightRadius: 60,
+    borderTopLeftRadius: 60,
+    paddingHorizontal: 30,
+  },
+  fruitnameContainer: {
+    marginTop: 30,
+    fontSize: 25,
+    fontWeight: "bold",
+  },
+  bold: {
+    fontWeight: "bold",
+  },
+  flavour_price_container: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginTop: 10,
+  },
+  starsContainer: {
+    marginTop: 15,
+    flexDirection: "row",
+    gap: 10,
+  },
+  textcontainer: {
+    marginTop: 10,
+  },
+  detailsText: {
+    color: "grey",
+  },
+  price_cart_container: {
+    marginTop: 25,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  priceText: {
+    fontSize: 30,
+  },
+  button: {
+    width: "60%",
+    backgroundColor: "red",
+    padding: 10,
+    borderRadius: 10,
+  },
+  btntext: {
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "white",
+  },
+  detailsImage: {
+    height: 310,
+  },
 });
 
 export default styles;

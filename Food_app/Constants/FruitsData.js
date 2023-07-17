@@ -15,7 +15,8 @@ export const featuredFruits = [
       desc: 'Sweet and juicy',
       shadow: 'orange',
       image: require("../assets/orange.png"),
-      color: opacity => `rgba(251, 216, 146, ${opacity})`
+      color: opacity => `rgba(251, 216, 146, ${opacity})`,
+      id:1
     },
     {
       name: 'Flesh Nectari',
@@ -24,7 +25,8 @@ export const featuredFruits = [
       stars: 3,
       desc: 'Sweet and juicy',
       image: require('../assets/peach.png'),
-      color: opacity => `rgba(255, 170, 157, ${opacity})`
+      color: opacity => `rgba(255, 170, 157, ${opacity})`,
+      id:2
     },
     
     {
@@ -34,7 +36,8 @@ export const featuredFruits = [
       desc: 'Sweet and juicy',
       shadow: 'purple',
       image: require('../assets/grapes.png'),
-      color: opacity => `rgba(214, 195, 246, ${opacity})`
+      color: opacity => `rgba(214, 195, 246, ${opacity})`,
+      id:3
     },
     
     
@@ -45,7 +48,8 @@ export const featuredFruits = [
       desc: 'Sweet and juicy',
       shadow: 'red',
       image: require('../assets/redOrange.png'),
-      color: opacity => `rgba(255, 163, 120, ${opacity})`
+      color: opacity => `rgba(255, 163, 120, ${opacity})`,
+      id:4
     },
     {
       name: 'Green Apple',
@@ -54,7 +58,8 @@ export const featuredFruits = [
       desc: 'Sweet and juicy',
       shadow: 'green',
       image: require('../assets/greenApple.png'),
-      color: opacity => `rgba(139, 243, 139, ${opacity})`
+      color: opacity => `rgba(139, 243, 139, ${opacity})`,
+      id:5
     },
     
     

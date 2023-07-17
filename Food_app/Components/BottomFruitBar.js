@@ -1,11 +1,14 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 import styles from "./styles";
+import { useNavigation } from "@react-navigation/native";
+import { SCREENS_NAME } from "../App";
 
 const BottomFruitBar = ({ botFruit }) => {
+  const navigation = useNavigation();
   return (
     <View>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate("DetailsScreen")}>
         <View style={[styles.bottomFruitsImageContainer]}>
           <Image
             style={styles.botFruitImage}

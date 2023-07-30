@@ -125,8 +125,8 @@ const styles = StyleSheet.create({
     height: "45%",
     backgroundColor: "white",
     marginTop: 70,
-    borderTopRightRadius: 60,
-    borderTopLeftRadius: 60,
+    borderTopRightRadius: 40,
+    borderTopLeftRadius: 40,
     paddingHorizontal: 30,
   },
   fruitnameContainer: {
@@ -167,6 +167,7 @@ const styles = StyleSheet.create({
     backgroundColor: "red",
     padding: 10,
     borderRadius: 10,
+    transform:[{translateX:100}]
   },
   btntext: {
     fontSize: 20,

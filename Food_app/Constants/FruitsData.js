@@ -98,7 +98,7 @@ export const cartItems = [
     {
       name: 'Green Apple',
       price: "10.5",
-      qty: 2,
+      qty: 1,
       desc: 'Sweet and juicy',
       shadow: 'green',
       image: require('../assets/greenApple.png'),

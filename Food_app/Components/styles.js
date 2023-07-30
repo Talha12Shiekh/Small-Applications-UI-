@@ -167,7 +167,7 @@ const styles = StyleSheet.create({
     backgroundColor: "red",
     padding: 10,
     borderRadius: 10,
-    transform:[{translateX:100}]
+    transform: [{ translateX: 100 }],
   },
   btntext: {
     fontSize: 20,
@@ -176,6 +176,68 @@ const styles = StyleSheet.create({
   },
   detailsImage: {
     height: 310,
+  },
+  cartItems: {
+    marginTop: "30%",
+    width: "95%",
+    alignSelf: "center",
+  },
+  cartText: {
+    fontSize: 25,
+    marginBottom: 20,
+    marginLeft: 20,
+  },
+  cartItem: {
+    height: 120,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  counterContainer: {
+    flexDirection: "row",
+    width: "20%",
+    gap: 10,
+    position: "absolute",
+    right: 0,
+    bottom: 35,
+  },
+  counterButton: {
+    width: 20,
+    aspectRatio: 1,
+    backgroundColor: "#03a9f4b0",
+    borderRadius: 5,
+  },
+  white: {
+    color: "white",
+    fontSize: 15,
+  },
+  cartName_and_price_container: {
+    position: "absolute",
+    left: "30%",
+  },
+  paymentButton: {
+    width: "80%",
+    alignSelf: "center",
+    backgroundColor: "orange",
+    padding: 10,
+    borderRadius: 15,
+    shadowColor: "orange",
+    shadowOffset: {
+      width: 0,
+      height: 10,
+    },
+    shadowOpacity: 0.30,
+    shadowRadius: 13.16,
+    
+    elevation: 20,
+  },
+  totalPriceContainer: {
+    alignSelf: "flex-end",
+    marginRight: 20,
+    marginVertical: 30,
+  },
+  totalPrice: {
+    fontSize: 18,
   },
 });
 

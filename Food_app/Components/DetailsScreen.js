@@ -13,17 +13,21 @@ import { Ionicons, FontAwesome } from "@expo/vector-icons";
 const DetailsScreen = ({ navigation, route }) => {
   const { botFruit: item } = route.params;
 
-  const ImageAnimation = useRef(new Animated.Value(0)).current;
+  function genereateAnimation(value){
+    return new Animated.Value(value)
+  }
+
+  const ImageAnimation = useRef(genereateAnimation(0)).current;
   const { height } = useWindowDimensions();
-  const BottomSheetAnimation = useRef(new Animated.Value(height)).current;
-  const TextAnimation = useRef(new Animated.Value(0)).current;
-  const DescriptionsAnimation = useRef(new Animated.Value(0)).current;
-  const PriceAnimation = useRef(new Animated.Value(0)).current;
-  const ButtonScaleAnimation = useRef(new Animated.Value(0)).current;
+  const BottomSheetAnimation = useRef(genereateAnimation(height)).current;
+  const TextAnimation = useRef(genereateAnimation(0)).current;
+  const DescriptionsAnimation = useRef(genereateAnimation(0)).current;
+  const PriceAnimation = useRef(genereateAnimation(0)).current;
+  const ButtonScaleAnimation = useRef(genereateAnimation(0)).current;
 
   let starsArray = Array(item.stars).fill({ animation: new Animated.Value(0) });
 
-  const ANIMATION_DURATION = 500;
+  const ANIMATION_DURATION = 400;
 
   const AnimateToValue = (animation,toValue,duration = ANIMATION_DURATION) => {
     return Animated.timing(animation,{
@@ -116,7 +120,7 @@ const DetailsScreen = ({ navigation, route }) => {
             only five centuries, but also the leap into
           </Text>
         </Animated.View>
-        <View style={[styles.price_cart_container]}>
+        <View style={[styles.price_cart_container,{justifyContent:"space-between"}]}>
           <Animated.View style={{ opacity: PriceAnimation }}>
             <Text style={styles.priceText}>$ {item.price}</Text>
           </Animated.View>
@@ -129,6 +133,7 @@ const DetailsScreen = ({ navigation, route }) => {
                 styles.center,
                 { backgroundColor: item.shadow },
               ]}
+              onPress={() => navigation.navigate("CartScreen")}
             >
               <Text style={styles.btntext}>Add to Cart</Text>
             </TouchableOpacity>
